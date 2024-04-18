@@ -1,0 +1,211 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden !important;
+  font-family: "Georgia", sans-serif;
+}
+
+section {
+  padding: 50px 10px;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.app {
+  width: 100vw;
+  min-height: 100vh;
+  border: 2px solid rgb(255, 255, 255);
+  /* background: #f1eeee; */
+  background-color: #EAC3C3;
+}
+
+.header {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #123;
+  z-index: 10 ;
+  color: white;
+  color: #000;
+  height: 80px;
+  position: fixed;
+  top: 0;
+}
+
+.header-tabs {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-tabs .link {
+  color: #fff;
+  /* color: #000; */
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 80px;
+  border-top: 2px solid #000;
+}
+
+.footer-block {
+  width: 40%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer-block p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.footer-link {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.content {
+  margin-top: 80px;
+  width: 100%;
+}
+
+.zigzag-line {
+  height: 10px; /* Adjust the height to fit your needs */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><polyline points="0,10 5,0 10,10" fill="none" stroke="%23000000" stroke-width="1"/></svg>');
+  background-size: 6px 10px; /* Adjust the size to change the density of the zigzag */
+  position: relative;
+}
+
+.joinBlock {
+  /* border-top: 2px solid rgb(10, 10, 11); */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px;
+}
+
+.joinBlock h1 {
+  font-size: 30px;
+  margin: 0;
+  line-height: 45px;
+  font-weight: 400;
+}
+
+.joinBlock p {
+  font-size: 20px;
+  margin: 0;
+  line-height: 30px;
+  width: 427px;
+}
+
+.joinBlock p:last-child {
+  font-size: 15px;
+  margin: 0;
+  line-height: 22px;
+  color: #6b7280;
+}
+
+.formBlock {
+  width: 464px;
+  margin: 10px 0px 20px 0px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.formBlock input {
+  width: 60%;
+  height: 45px;
+  padding-left: 10px;
+  border: 1px solid #4e4e4e;
+}
+.formBlock button {
+  width: 15%;
+  height: 47px;
+  /* padding:23px; */
+  border: none;
+  background-color: #4e4e4e;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-tabs {
+    width: 98%;
+  }
+
+  .header-tabs .link {
+    font-size: 18px;
+  }
+
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: auto;
+    border-top: 2px solid #000;
+  }
+
+  .footer-block {
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .footer-block p {
+    font-size: 14px;
+    color: #6b7280;
+  }
+
+  .footer-link {
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .joinBlock p {
+    font-size: 20px;
+    margin: 0;
+    line-height: 30px;
+    width: 80%;
+  }
+
+  .formBlock {
+    width: 90%;
+  }
+}
